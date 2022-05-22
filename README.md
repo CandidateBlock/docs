@@ -1,6 +1,8 @@
 # Docs
 Public Documents for Bitcoin Related Information
 
-# The largest heading
-## The second largest heading
-###### The smallest heading
+## Course Material
+[Contribution guidelines for this project](docs/CONTRIBUTING.md)
+
+## General Support Documenation
+[Contribution guidelines for this project](docs/CONTRIBUTING.md)
