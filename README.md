@@ -1,8 +1,13 @@
-# Docs
-Public Documents for Bitcoin Related Information
+# CandidateBlock Github Repo for Public Docs
+
+[Docs](/README.md) 
+
+<HR>
+
+Public Documents for Bitcoin Related Information, provided by [CandidateBlock.com](https://candidateblock.com/)
 
 ## Course Material
-[Contribution guidelines for this project](docs/CONTRIBUTING.md)
+Course Material [here](./course-material/table-of-contents.md)
 
 ## General Support Documenation
-[Contribution guidelines for this project](docs/CONTRIBUTING.md)
+General Support Documenation [here](./general-support-documentation/table-of-contents.md)
