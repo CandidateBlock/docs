@@ -7,6 +7,10 @@
 
 You will find the Course Material documenation in this section.
 
+
+## PGP
+Course Material [here](./pgp/table-of-contents.md)
+
 ## Base58
 Course Material [here](./Base58/table-of-contents.md)
 
