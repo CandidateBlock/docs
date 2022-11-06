@@ -1,16 +1,12 @@
 from setuptools import setup
 
-# Install Instrucitions
-# $ python setup.py install
-# $ pip install -e .
-
 my_package = 'docs'
 
 setup(
     name=my_package,
     version='1.0.0',
-    description='A useful module',
-    url='http://github.com/canddidateblock/candidateblock_bitcoin_library',
+    description='Public Documents for Bitcoin Related Information',
+    url='https://github.com/CandidateBlock/docs',
     author='CandidateBlock',
     author_email='candidateblock@canddidateblock.com',
     license='MIT',
