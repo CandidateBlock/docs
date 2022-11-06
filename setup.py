@@ -4,7 +4,7 @@ from setuptools import setup
 # $ python setup.py install
 # $ pip install -e .
 
-my_package = 'candidateblock_bitcoin_library'
+my_package = 'docs'
 
 setup(
     name=my_package,
@@ -17,8 +17,8 @@ setup(
     # packages=find_packages(where="candidateblock_bitcoin_library"),
     # package_dir={"": "candidateblock_bitcoin_library"},
     packages=[my_package],  # same as name
-    install_requires=[
-        "ecdsa"
-    ],
+    # install_requires=[
+    #     "ecdsa"
+    # ],
     # scripts=['scripts/main'],
 )
