@@ -1,13 +1,19 @@
-# CandidateBlock Github Repo for Public Docs
+Course Material
+===============
 
-[Docs](/README.md) 
+You will find the Course Material documenation in this section.
 
-<HR>
+PGP
+**********
 
-Public Documents for Bitcoin Related Information, provided by [CandidateBlock.com](https://candidateblock.com/)
+xxxx
 
-## Course Material
-Course Material [here](./course-material/table-of-contents.md)
+Base58
+**********
 
-## General Support Documenation
-General Support Documenation [here](./general-support-documentation/table-of-contents.md)
+xxxx
+
+Public and Private Keys
+***********************
+
+xxxx
