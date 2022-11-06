@@ -11,7 +11,7 @@ Welcome to CandidateBlock's Bitcoin Documentation!
    :caption: Contents:
 
    intro
-   course_material
+   course_material2
    general_support_documentation
 
 Indices and tables
