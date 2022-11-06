@@ -12,7 +12,6 @@ Welcome to CandidateBlock's Bitcoin Documentation!
 
    intro
    courses
-   course_material2
    general_support_documentation
 
 Indices and tables
