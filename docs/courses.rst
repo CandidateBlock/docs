@@ -17,3 +17,8 @@ Public and Private Keys
 ***********************
 
 xxxxx
+
+SHA256 Cryptographic Hash Functions
+***********************************
+
+xxxxx
