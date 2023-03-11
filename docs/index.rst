@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 Welcome to CandidateBlock's Bitcoin Documentation!
-==========================================================
+==================================================
 
 .. toctree::
    :maxdepth: 2
@@ -12,6 +12,8 @@ Welcome to CandidateBlock's Bitcoin Documentation!
 
    intro
    courses
+   base_number_systems
+   computer_number_systems
    general_support_documentation
 
 Indices and tables
