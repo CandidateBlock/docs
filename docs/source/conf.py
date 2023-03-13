@@ -14,6 +14,19 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
+# *******************
+# * Install
+# *******************
+# $ pip install -U sphinx
+# $ pip install sphinx-rtd-theme
+
+# *******************
+# * Rebuild
+# *******************
+# $ cd docs
+# $ make clean
+# $ make html
+
 
 # -- Project information -----------------------------------------------------
 

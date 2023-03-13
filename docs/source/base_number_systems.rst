@@ -6,7 +6,7 @@ number systems are organised by tens, fives, and twenties, suggesting the use of
 feet in counting.
 
 Base\ :sub:`10`
-*******
+***************
 
 Base\ :sub:`10` is the number system we mostly use, probably because we have 10 digits on our hands.
 
@@ -39,7 +39,7 @@ Value = 21\ :sub:`10`
 +----------+------+-------+
 | Hundreds | Tens | Units |
 +----------+------+-------+
-| 0        | 2    | 1 |
+| 0        | 2    | 1     |
 +----------+------+-------+
 
 (100 x 0 ) + (10 x 2) + (1 x 1) = 21\ :sub:`10`
@@ -55,7 +55,7 @@ Value = 255\ :sub:`10`
 (100 x 2) + (10 x 5) + (1 x 5) = 255\ :sub:`10`
 
 Base\ :sub:`2` (Binary)
-***************
+***********************
 
 Base\ :sub:`2` (Binary) is the number system computers use to store numbers as the electric current can only be in two states
 
@@ -113,7 +113,7 @@ Value = 255\ :sub:`10`
 | 11111111\ :sub:`2` = 255\ :sub:`10`
 
 Base\ :sub:`16` (HEX / Hexadecimal)
-***************
+***********************************
 
 Base\ :sub:`16` (HEX / Hexadecimal) is the number system common when representing large numbers in computers. Base\ :sub:`16`  can be used to represent
 large numbers with fewer digits and 16 is divisible by 2 (Base\ :sub:`2` [Binary] is used in Computers)
