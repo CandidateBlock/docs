@@ -21,6 +21,11 @@
 # $ pip install sphinx-rtd-theme
 
 # *******************
+# * First time
+# *******************
+# $ sphinx-apidoc -f -o docs/source candidateblock_bitcoin_library
+# $ sphinx-build -b html docs/source/ docs/build/html
+# *******************
 # * Rebuild
 # *******************
 # $ cd docs
@@ -31,7 +36,7 @@
 # -- Project information -----------------------------------------------------
 
 project = "CandidateBlock Docs"
-copyright = "2022, CandidateBlock.com"
+copyright = "2023, CandidateBlock.com"
 author = "candidateblock@candidateblock.com"
 
 
@@ -73,4 +78,4 @@ html_theme = "sphinx_rtd_theme"
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ["_static"]
+# html_static_path = ["_static"]
