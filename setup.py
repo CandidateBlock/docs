@@ -1,5 +1,9 @@
 from setuptools import setup
 
+# Install Instrucitions
+# $ python setup.py install
+# $ pip install -e .
+
 my_package = 'docs'
 
 setup(
