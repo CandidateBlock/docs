@@ -1,14 +1,9 @@
-Course Material
-===============
+Bitcoin Basics
+==============
 
-You will find the Course Material documenation in this section.
+This section will introduce some Bitcoin Basic Knowledge, with the aim to better understand the Bitcoin Protocol.
 
 PGP
-**********
-
-xxxx
-
-Base58
 **********
 
 xxxx
