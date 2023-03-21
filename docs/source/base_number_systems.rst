@@ -249,16 +249,39 @@ As you can see Hex is more efficient in symbolising longer numbers, compare the 
 Base\ :sub:`64`
 ***************
 
-Base\ :sub:`64` is the number system we mostly use, probably because we have 10 digits on our hands.
+Base\ :sub:`64` is the number system used mostly in email for sending binary email attachments.
+The binary data (Bytes) is required to be encoded into 7-Bit ASCII as the email protocol (SMTP) can only support 7-Bit ASCII.
+See `Wikipedia - Base64 <https://en.wikipedia.org/wiki/Base64>`_ for more details.
 
-Symbols are: 0 1 2 3 4 5 6 7 8 9 (Total 10)
+Symbols are: ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/ (Total 64)
 
-Numbers are represented in an overflow system, with each column being 10 times larger than the last, due to base\ :sub:`10`. ::
+    If you are unclear what a Byte sequence in Python is refere here :ref:`computer-number-systems-byte-string-prefix`.
 
-    Units     = 10 ^ 0 =   1
-    Tens      = 10 ^ 1 =  10
-    Hundredes = 10 ^ 2 = 100
-    etc...
+.. code-block:: python
+    
+    """
+    Python example to demonstrate how to convert from
+    a Byte Array to and from Base64
+    """
+
+    byte_sequence = b'Hello World!'
+    b64_sequence = base64.b64encode(byte_sequence)
+    print(f"byte_sequence: {byte_sequence}")
+    print(f"b64_sequence: {b64_sequence}")
+
+    """
+    Output
+    byte_sequence: b'Hello World!'
+    b64_sequence: b'SGVsbG8gV29ybGQh'
+    """
+
+    decoded_byte_sequence = base64.b64decode(b64_sequence)
+    print(f"decoded_byte_sequence: {decoded_byte_sequence}")
+
+    """
+    Output
+    decoded_byte_sequence: b'Hello World!'
+    """
 
 Base\ :sub:`58`
 ***************

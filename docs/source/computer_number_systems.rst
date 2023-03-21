@@ -385,16 +385,181 @@ A little-endian system, in contrast, stores the least-significant byte at the sm
 Big-Endian (BE)
 ---------------
 
-Stuff
+Big-Endian means numbers are stored/ordered in the computers memory as you read
+left to right, mapping to first memory address to last. 
+
+*Note: the number is split into Bytes as the basic unit for computer memory*
+
+Lets use the integer number 305419896 as an exmaple. 305419896\ :sub:`10` in Hexadecimal is 12345678\ :sub:`16`.  
+
+Number stored in memory with the **big-end** first (when split in to Bytes).
+
++--------------------+-------------+
+| Memory Byte Number | Value (HEX) |
++--------------------+-------------+
+| 0                  | 12          |
++--------------------+-------------+
+| 1                  | 34          |
++--------------------+-------------+
+| 2                  | 56          |
++--------------------+-------------+
+| 3                  | 78          |
++--------------------+-------------+
 
 Little-Endian (LE)
 ------------------
 
-Stuff
+Little-Endian means numbers are stored/ordered in the computers memory as you read
+left to right, mapping to first memory address to last. 
 
-Byte Arrays
------------
+*Note: the number is split into Bytes as the basic unit for computer memory*
 
-Stuff
+Using the same integer number 305419896\ :sub:`10` in Hexadecimal is 12345678\ :sub:`16`.  
 
+Number stored in memory with the **little-end** first (when split in to Bytes).
 
++--------------------+-------------+
+| Memory Byte Number | Value (HEX) |
++--------------------+-------------+
+| 0                  | 78          |
++--------------------+-------------+
+| 1                  | 56          |
++--------------------+-------------+
+| 2                  | 34          |
++--------------------+-------------+
+| 3                  | 12          |
++--------------------+-------------+
+
+It is important to note that both systems, Big-Endian and Little-Endian, the number is the same value the computer is just
+storing the value in a different order, as shown in the following table
+
++---------------+------+------+------+------+----------+-----------+
+| Byte Number   |  0   |  1   |  2   |  3   |  HEX     | DEC       | 
++---------------+------+------+------+------+----------+-----------+
+| Big-Endian    |  12  |  34  |  56  |  78  | 12345678 | 305419896 |
++---------------+------+------+------+------+----------+-----------+
+| Little-Endian |  78  |  56  |  34  |  12  | 12345678 | 305419896 | 
++---------------+------+------+------+------+----------+-----------+
+
+Python Byte Arrays
+******************
+
+Python supports various ways to store Bytes in memory.
+
+.. _computer-number-systems-byte-string-prefix:
+
+Byte String Prefix
+------------------
+
+.. code-block:: python
+
+    '''
+    Bytes string prefix =  "b" or "B" or "br" or "Br" or "bR" or "BR"
+    '''
+
+    byte_sequence = b"Hello World!"
+    print(f"byte_sequence: {byte_sequence}")
+    print(f"byte_sequence in HEX: {byte_sequence.hex()}")
+
+    """
+    Output
+    byte_sequence: b'Hello World!'
+    byte_sequence in HEX: 48656c6c6f20576f726c6421
+    """
+
+    '''
+    Byte HEX values can be escaped by \x 
+    eg 255 base 10 = FF base 16 = \xFF
+    '''
+
+    byte_sequence = b"\x48\x65\x6c\x6c\x6f\x20\x57\x6f\x72\x6c\x64\x21"
+    print(f"byte_sequence: {byte_sequence}")
+    print(f"byte_sequence in HEX: {byte_sequence.hex()}")
+
+    """
+    Output
+    byte_sequence: b'Hello World!'
+    byte_sequence in HEX: 48656c6c6f20576f726c6421
+    """
+
+Bytes Object
+------------
+
+String
+^^^^^^
+
+.. code-block:: python
+
+    '''
+    Bytes created from a iterable of ints, string, bytes or buffer objects.
+    > String example
+    '''
+
+    byte_sequence = bytes("Hello World!", "utf8")
+    print(f"byte_sequence: {byte_sequence}")
+    print(f"byte_sequence in HEX: {byte_sequence.hex()}")
+
+    """
+    Output
+    byte_sequence: b'Hello World!'
+    byte_sequence in HEX: 48656c6c6f20576f726c6421
+    """
+
+Integer,  Big-Endian
+^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: python
+
+    '''
+    Bytes created from a iterable of ints, string, bytes or buffer objects.
+    > Integer example stored as 4-Bytes, Big-Endian and unsigned
+    '''
+
+    byte_sequence = int(305419896).to_bytes(length=4, byteorder='big', signed=False)
+    print(f"byte_sequence: {byte_sequence}")
+    print(f"byte_sequence in HEX: {byte_sequence.hex()}")
+
+    """
+    Output
+    byte_sequence: b'\x124Vx'
+    byte_sequence in HEX: 12345678
+    """
+
+Integer,  Little-Endian
+^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: python
+
+    '''
+    Bytes created from a iterable of ints, string, bytes or buffer objects.
+    > Integer example stored as 4-Bytes, Little-Endian and unsigned
+    '''
+
+    byte_sequence = int(305419896).to_bytes(length=4, byteorder='little', signed=False)
+    print(f"byte_sequence: {byte_sequence}")
+    print(f"byte_sequence in HEX: {byte_sequence.hex()}")
+
+    """
+    Output
+    byte_sequence: b'xV4\x12'
+    byte_sequence in HEX: 78563412
+    """
+
+From Hex
+^^^^^^^^
+
+.. code-block:: python
+
+    '''
+    Create a bytes object from a string of hexadecimal numbers.
+    '''
+
+    byte_sequence = bytes.fromhex("12345678")
+    print(f"byte_sequence: {byte_sequence}")
+    print(f"byte_sequence in HEX: {byte_sequence.hex()}")
+
+    """
+    Output
+    byte_sequence: b'\x124Vx'
+    byte_sequence in HEX: 12345678
+    """
