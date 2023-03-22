@@ -246,6 +246,33 @@ As you can see Hex is more efficient in symbolising longer numbers, compare the 
     255      Base 10 (Decimal) 3 Symbols/Characters
     FF       Base 16 (Hex)     2 Symbols/Characters
 
+.. code-block:: python
+    
+    """
+    Python example to demonstrate how to convert from
+    Decimal (base 10) to Hexadecimal (base 16) and back
+    """
+
+    decimal_num = 255
+    print(f"Decimal: {decimal_num}, Hexadecimal: {hex(decimal_num)}")
+
+    """
+    Output
+    Decimal: 255, Hexadecimal: 0xff
+    Notice the 0x prefix, this is how python references Hexadecimal numbers
+    You can also use the 0x prefix to use Hexadecimal literals
+    """
+
+    new_num_as_binary = 0xaa
+    # or new_num_as_binary = bin(170)
+    # or new_num_as_binary = int('10101010', 2) <- 2 here means the base of the string 
+    print(f"Decimal: {new_num_as_binary}, Hexadecimal: {hex(new_num_as_binary)}")
+
+    """
+    Output
+    Decimal: 170, Hexadecimal: 0xaa
+    """
+
 Base\ :sub:`64`
 ***************
 
