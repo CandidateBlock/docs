@@ -250,7 +250,8 @@ Base\ :sub:`64`
 ***************
 
 Base\ :sub:`64` is the number system used mostly in email for sending binary email attachments.
-The binary data (Bytes) is required to be encoded into 7-Bit ASCII as the email protocol (SMTP) can only support 7-Bit ASCII.
+The binary data (Bytes) is required to be encoded into 7-Bit :ref:`computer-number-systems-ascii`
+as the email protocol (SMTP) can only support 7-Bit ASCII.
 See `Wikipedia - Base64 <https://en.wikipedia.org/wiki/Base64>`_ for more details.
 
 Symbols are: ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/ (Total 64)
@@ -264,15 +265,18 @@ Symbols are: ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/ (T
     a Byte Array to and from Base64
     """
 
+    import base64
     byte_sequence = b'Hello World!'
     b64_sequence = base64.b64encode(byte_sequence)
     print(f"byte_sequence: {byte_sequence}")
-    print(f"b64_sequence: {b64_sequence}")
+    print(f"byte_sequence in HEX: {byte_sequence.hex()}")
+    print(f"b64_sequence in Base64: {b64_sequence}")
 
     """
     Output
     byte_sequence: b'Hello World!'
-    b64_sequence: b'SGVsbG8gV29ybGQh'
+    byte_sequence in HEX: 48656c6c6f20576f726c6421
+    b64_sequence in Base64: b'SGVsbG8gV29ybGQh'
     """
 
     decoded_byte_sequence = base64.b64decode(b64_sequence)

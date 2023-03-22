@@ -38,6 +38,7 @@ The table below shows as the number of Bytes grow the names change.
 | 16              | Quad Word   | 64             | Long Long Int |
 +-----------------+-------------+----------------+---------------+
 
+.. _computer-number-systems-ascii:
 ASCII
 *****
 
