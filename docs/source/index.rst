@@ -2,7 +2,7 @@ Welcome to CandidateBlock Bitcoin Documentation
 ===============================================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: Contents:
 
    intro

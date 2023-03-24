@@ -388,13 +388,13 @@ Big-Endian (BE)
 ---------------
 
 Big-Endian means numbers are stored/ordered in the computers memory as you read
-left to right, mapping to first memory address to last. 
+**left to right**, mapping to first memory address to last. 
 
 *Note: the number is split into Bytes as the basic unit for computer memory*
 
 Lets use the integer number 305419896 as an exmaple. 305419896\ :sub:`10` in Hexadecimal is 12345678\ :sub:`16`.  
 
-Number stored in memory with the **big-end** first (when split in to Bytes).
+The number is stored in memory with the **big-end** first (when split in to Bytes).
 
 +--------------------+-------------+
 | Memory Byte Number | Value (HEX) |
@@ -412,13 +412,13 @@ Little-Endian (LE)
 ------------------
 
 Little-Endian means numbers are stored/ordered in the computers memory as you read
-left to right, mapping to first memory address to last. 
+**right to left**, mapping to first memory address to last. 
 
 *Note: the number is split into Bytes as the basic unit for computer memory*
 
 Using the same integer number 305419896\ :sub:`10` in Hexadecimal is 12345678\ :sub:`16`.  
 
-Number stored in memory with the **little-end** first (when split in to Bytes).
+The number is stored in memory with the **little-end** first (when split in to Bytes).
 
 +--------------------+-------------+
 | Memory Byte Number | Value (HEX) |
