@@ -39,6 +39,7 @@ The table below shows as the number of Bytes grow the names change.
 +-----------------+-------------+----------------+---------------+
 
 .. _computer-number-systems-ascii:
+
 ASCII
 *****
 

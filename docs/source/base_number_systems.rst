@@ -265,7 +265,7 @@ As you can see Hex is more efficient in symbolising longer numbers, compare the 
 
     new_num_as_binary = 0xaa
     # or new_num_as_binary = bin(170)
-    # or new_num_as_binary = int('10101010', 2) <- 2 here means the base of the string 
+    # or new_num_as_binary = int('aa', 16) <- 16 here means the base of the string
     print(f"Decimal: {new_num_as_binary}, Hexadecimal: {hex(new_num_as_binary)}")
 
     """
